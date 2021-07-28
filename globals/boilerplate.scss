@@ -19,22 +19,22 @@ $spacevalues: (0, 1, 2, 3, 4, 5);
 
 @each $space in $spacevalues {
   .m-#{$space} {
-    margin: (#{$space} * 4)px;
+    margin: #{$space} * rem(4);
   }
   .my-#{$space} {
-    margin: (#{$space} * 4)px 0;
+    margin: #{$space} * rem(4) 0;
   }
   .mx-#{$space} {
-    margin: 0 (#{$space} * 4)px;
+    margin: 0 #{$space} * rem(4);
   }
   
   .p-#{$space} {
-    padding: (#{$space} * 4)px;
+    padding: #{$space} * rem(4);
   }
   .py-#{$space} {
-    padding: (#{$space} * 4)px 0;
+    padding: #{$space} * rem(4) 0;
   }
   .px-#{$space} {
-    padding: 0 (#{$space} * 4)px;
+    padding: 0 #{$space} * rem(4);
   }
 }

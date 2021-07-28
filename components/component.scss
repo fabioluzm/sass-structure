@@ -1,0 +1,66 @@
+@use '../utils' as *;
+
+// placeholder
+%toolbelt {
+  border-top: rem(1) rgba(var(--black), .12) solid;
+  padding: rem(16) rem(0);
+  width: 100%;
+  &:hover { 
+    border: rem(2) rgba(var(--black), .5) solid;
+  }
+}
+
+.component {
+  padding: rem(30);
+  &__box {
+    width: rem(2);
+    height: rem(2);
+    border-radius: rem(2);
+    // background-color: $blue;
+    background-color: var(--blue);
+  }
+  &__action-buttons {
+    @extend %toolbelt;
+    color: var(--green);
+  }
+  &__reset-buttons {
+    @extend %toolbelt;
+    color: var(--red);
+  }
+}
+
+/*
+CSS Display
+
+.component {
+  padding: 1.875rem;
+}
+
+.component__box {
+  width: 0.125rem;
+  height: 0.125rem;
+  border-radius: 0.125rem;
+  background-color: #00f;
+}
+
+.component__action-buttons,
+.component__reset-buttons {
+  box-sizing: border-box;
+  border-top: 0.0625rem rgba(0, 0, 0, 0.12) solid;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.component__action-buttons:hover,
+.component__reset-buttons:hover {
+  border: 0.125rem rgba(0, 0, 0, 0.5) solid;
+}
+
+.component__action-buttons {
+  color: #0f0;
+}
+
+.component__reset-buttons {
+  color: #f00;
+}
+*/

@@ -13,3 +13,28 @@ body {
   // font-family: $app-font;
   font-family: var(--app-font);
 }
+
+// margin && padding classes
+$spacevalues: (0, 1, 2, 3, 4, 5);
+
+@each $space in $spacevalues {
+  .m-#{$space} {
+    margin: (#{$space} * 4)px;
+  }
+  .my-#{$space} {
+    margin: (#{$space} * 4)px 0;
+  }
+  .mx-#{$space} {
+    margin: 0 (#{$space} * 4)px;
+  }
+  
+  .p-#{$space} {
+    padding: (#{$space} * 4)px;
+  }
+  .py-#{$space} {
+    padding: (#{$space} * 4)px 0;
+  }
+  .px-#{$space} {
+    padding: 0 (#{$space} * 4)px;
+  }
+}

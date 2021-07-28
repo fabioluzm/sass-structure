@@ -1,0 +1,9 @@
+@mixin theme($light-theme: true) {
+  @if $light-theme {
+    background-colog: lighten($bg-color, 100%);
+    color: darken($text-color, 100%);
+  } @else {
+    background-colog: darken($bg-color, 100%);
+    color: lighten($text-color, 100%);
+  }
+}
